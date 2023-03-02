@@ -1,0 +1,36 @@
+
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+ # 应用名称
+spring:
+  application:
+    name: sms-spring-boot-starter
+##mail相关配置
+  mail:
+    host: smtp.163.com
+    username: liu1325921@163.com
+    password: DZMGUGDAACUUETEZ
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+          # 如果是用 SSL 方式，需要配置如下属性,使用qq邮箱的话需要开启
+          starttls:
+            enable: true
+            required: true
+    port: 465
+#mail配置
+mail:
+  from: liu1325921@163.com
+  to: liu1325921@163.com
+
+
+# SMS阿里云短信服务配置
+sms:
+  access-key-id: LTAI5tGK3fw5TyV63Wp521WG
+  access-secret: DA7gUQxFLEYU7ChCBWRpovtw413s1o
+  sign-name: ssm应用
+  template-code: SMS_271410492
