@@ -30,7 +30,7 @@ mail:
 
 # SMS阿里云短信服务配置
 sms:
-  access-key-id: LTAI5tGK3fw5TyV63Wp521WG
-  access-secret: DA7gUQxFLEYU7ChCBWRpovtw413s1o
+  access-key-id: 自己填
+  access-secret: 自己填
   sign-name: ssm应用
   template-code: SMS_271410492
